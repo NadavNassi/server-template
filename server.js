@@ -29,6 +29,9 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Config Express Routes
+const itemRoutes = require('./api/items/items.routes')
+
+app.use('/api/item', itemRoutes)
 
 // const { connectSockets } = require('./services/socket.service')
 
